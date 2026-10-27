@@ -62,11 +62,11 @@
 
 1. Pourquoi est-ce une bonne idée de séparer le code Python et le HTML ? (Pensez à une équipe avec un développeur et un graphiste.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Séparer le code Python et le HTML permet à chacun de travailler sur son fichier sans casser celui de l’autre. Le développeur s’occupe de la logique dans flask_app.py, le graphiste de l’apparence dans les templates. Le code est aussi plus lisible et plus facile à modifier.
 
 2. Les `{{ prenom }}` sont-ils remplacés par le serveur ou par le navigateur ? Comment l'avez-vous vérifié ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Les {{ prenom }} sont remplacés par le serveur, avant l’envoi de la page. On le vérifie avec Ctrl + U : le code source reçu par le navigateur contient « Léa » (ou ton prénom), et plus aucun {{ prenom }}.
 
 ---
 
