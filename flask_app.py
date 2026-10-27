@@ -29,8 +29,8 @@ def presentation():
 
 @app.get("/loisirs")
 def loisir():
-    return "J'aime le Football."
-            "J'aime l'embrayage des boites mecaniques, faire du drift et les M4 G82"
+    return ("J'aime le Football."
+            "J'aime l'embrayage des boites mecaniques, faire du drift et les M4 G82")
    
 
 # ---------------------------------------------------------------
