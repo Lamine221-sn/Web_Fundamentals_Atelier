@@ -11,7 +11,7 @@ Dans cet atelier, vous allez **mettre en ligne votre propre petit site Web** pui
 **Prérequis :** aucun ! Savoir lire quelques lignes de Python aide, mais tout est expliqué.
 **Ce qu'il vous faut :** un navigateur (Chrome, Firefox ou Edge), un compte GitHub et une adresse e-mail.
 
----
+-----
 
 ## 🗺️ Comment ça marche ?
 
