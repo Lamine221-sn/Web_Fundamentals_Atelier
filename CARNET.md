@@ -27,15 +27,15 @@
 
 1. Dans l'URL `https://www.google.com/maps`, quel est le nom de domaine ? Quel est le chemin ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ google.com
 
 2. Que veut dire le message *Not Found* ? Qui l'a envoyé : votre navigateur ou le serveur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Not Found (erreur 404) veut dire que le serveur n’a pas trouvé de page pour ce chemin, car aucune route ne correspond. C’est le serveur qui envoie ce message, pas ton navigateur.
 
 3. Que se passe-t-il si deux fonctions portent le même nom dans `flask_app.py` ? (Indice : essayez, puis lisez l'Error log.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_Flask plante avec une erreur AssertionError.Le site ne démarre plus et l’erreur apparaît dans l’Error log.
 
 ---
 
