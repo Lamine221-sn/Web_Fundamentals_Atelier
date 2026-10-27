@@ -34,7 +34,9 @@ def loisir():
             "J'aime l'embrayage des boites mecaniques, faire du drift et les M4 G82")
     return render_template("presentation.html", prenom="Lamine", nom="Mbengue",
                        loisirs=["Jeux vidéo", "Musique", "Escalade","BMW"])
-   
+@app.get("/bonjour/<prenom>")
+def bonjour(prenom):
+    return f"<h1>Bonjour {prenom} !</h1>"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
