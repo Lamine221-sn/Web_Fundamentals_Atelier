@@ -32,8 +32,8 @@ def presentation():
 def loisir():
     return ("J'aime le Football."
             "J'aime l'embrayage des boites mecaniques, faire du drift et les M4 G82")
-    return render_template("presentation.html", prenom="Léa", nom="Martin",
-                       loisirs=["Jeux vidéo", "Musique", "Escalade"])
+    return render_template("presentation.html", prenom="Lamine", nom="Mbengue",
+                       loisirs=["Jeux vidéo", "Musique", "Escalade","BMW"])
    
 
 # ---------------------------------------------------------------
