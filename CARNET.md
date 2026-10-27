@@ -110,15 +110,15 @@
 
 1. Dans l'URL `https://www.youtube.com/results?search_query=chat`, quel est le nom du paramètre ? Quelle est sa valeur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Dans https://www.youtube.com/results?search_query=chat, le paramètre s’appelle search_query et sa valeur est chat.
 
 2. Pourquoi le serveur plante-t-il avec `a=bonjour` ? Que faudrait-il faire pour l'éviter ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le serveur plante parce que int("bonjour") est impossible : « bonjour » n’est pas un nombre, Python lève une ValueError. Pour l’éviter, il faut vérifier la valeur avant de la convertir, avec un try/except ValueError ou .isdigit(). En cas d’erreur, on renvoie un message clair au lieu de planter.
 
 3. Pourquoi est-il dangereux d'afficher **tel quel** ce que l'utilisateur envoie ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Afficher tel quel ce que l’utilisateur envoie permet d’injecter du HTML ou du JavaScript dans ta page (faille XSS). Un pirate pourrait faire exécuter un script malveillant chez les visiteurs, par exemple pour voler leurs informations. Il faut toujours échapper les données, ce que font automatiquement les templates avec {{ ... }}.
 
 ---
 
@@ -126,15 +126,15 @@
 
 1. Quelle est la différence visible entre GET et POST ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ En GET, les données apparaissent dans l’URL (/salut?prenom=Lamine&ville=Paris). En POST, l’URL reste /salut et les données sont dans le corps de la requête, donc invisibles dans la barre d’adresse
 
 2. Pour un formulaire de **recherche**, quelle méthode choisiriez-vous ? Et pour un formulaire de **connexion avec mot de passe** ? Pourquoi ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Pour une recherche, on choisit GET, parce que l’URL peut être copiée, partagée ou mise en favori. Pour une connexion avec mot de passe, on choisit POST, parce qu’un mot de passe ne doit pas apparaître dans l’URL, qui est gardée dans l’historique et dans les logs.
 
 3. Les données envoyées en POST sont-elles vraiment « secrètes » ? (Pensez à ce que vous avez vu dans l'onglet Réseau.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Non, elles ne sont pas secrètes. Elles sont invisibles dans l’URL, mais on les voit dans l’onglet Réseau (Charge utile), et elles passent en clair si le site n’est pas en HTTPS. Le POST protège de l’affichage dans l’URL, pas de l’espionnage : c’est HTTPS qui chiffre.
 
 ---
 
