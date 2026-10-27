@@ -181,15 +181,15 @@ Défi : le code 418 veut dire « I’m a teapot » (je suis une théière). C’
 
 1. Quelle est la différence entre une page HTML et une réponse JSON ? À qui chacune est-elle destinée ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_Une page HTML est faite pour être lue et affichée par un humain via un navigateur. Une réponse JSON est faite pour un programme, avec des données brutes sans mise en forme.
 
 2. Dans la page `/horloge`, quel code s'exécute sur le **serveur** et quel code s'exécute dans le **navigateur** ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Sur le serveur : le code Python de flask_app.py (les routes /horloge et /api/heure). Dans le navigateur : le code JavaScript de la balise <script> (fetch, setInterval)
 
 3. Citez une application de votre téléphone qui, selon vous, utilise une API. Quelles données échange-t-elle ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_Exemple : l’application météo. Elle envoie la ville et reçoit en JSON la température et le ciel. Autres exemples : Spotify (titres, playlists), Google Maps (itinéraires), Instagram (publications).
 
 ---
 
@@ -197,4 +197,4 @@ Défi : le code 418 veut dire « I’m a teapot » (je suis une théière). C’
 
 En quelques phrases, expliquez à un ami ce qui se passe entre le moment où il tape une adresse dans son navigateur et celui où la page s'affiche :
 
-> _Ma réponse :_ 
+> _Ma réponse : Quand on tape une adresse, le navigateur envoie une requête HTTP au serveur, qui renvoie du HTML (avec CSS et images) que le navigateur affiche.
