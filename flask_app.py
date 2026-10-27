@@ -1,3 +1,4 @@
+from flask import Flask, render_template, request
 from flask import Flask, render_template
 # ---------------------------------------------------------------
 #  Mon premier site Web avec Flask
@@ -24,6 +25,12 @@ def accueil():
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
+@app.get("/calcul")
+def calcul():
+    a = int(request.args.get("a", 0))
+    b = int(request.args.get("b", 0))
+    return f"{a} + {b} = {a + b}"
+
 @app.get("/presentation")
 def presentation():
     return render_template("presentation.html", prenom="Lamine", nom="Mbengue")
