@@ -43,15 +43,18 @@
 
 1. Quelle est la différence entre ce que le serveur **envoie** et ce que le navigateur **affiche** ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le serveur envoie du texte brut : le code HTML avec ses balises tandisque le navigateur interprète ce texte et affiche une page mise en forme, avec des titres, des listes et des images. Tu peux voir le texte envoyé avec Ctrl + U.
 
 2. À quoi servent les balises `<h1>`, `<p>`, `<ul>` et `<li>` ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ <h1> : titre principal.
+<p> : paragraphe de texte.
+<ul> : liste à puces.
+<li> : un élément de cette liste.
 
 3. Pourquoi l'image s'affiche-t-elle alors qu'elle n'est pas sur votre serveur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ L’image s’affiche parce que la balise <img> contient l’adresse (URL) de l’image. Le navigateur envoie une requête à l’autre serveur (Wikimedia) pour la récupérer, puis l’affiche dans ta page. Elle n’a pas besoin d’être sur ton serveur.
 
 ---
 
