@@ -74,15 +74,15 @@
 
 1. Quelle est la différence de rôle entre le HTML et le CSS ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le HTML décrit la structure de la page (titre, paragraphe, liste, lien). Le CSS décrit son apparence (couleurs, polices, marges).
 
 2. Pour afficher votre page `/presentation`, combien de fichiers le navigateur doit-il télécharger ? (Vous pourrez le vérifier à l'exercice suivant !)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Pour /presentation, le navigateur télécharge 2 fichiers : la page HTML (presentation) et la feuille de style (style.css). Avec le logo Python, il y en a un 3ᵉ, et le navigateur essaie aussi de charger favicon.ico. Compte les lignes de ton onglet Réseau pour avoir le nombre exact.
 
 3. Pourquoi faut-il parfois faire **Ctrl + F5** pour voir les changements de CSS ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le navigateur garde les fichiers en cache (copie locale) pour aller plus vite. Il peut donc réafficher l’ancien CSS. Ctrl + F5 force le téléchargement d’une version neuve.
 
 ---
 
@@ -90,19 +90,19 @@
 
 1. Que signifie HTTP ? Qui envoie la **requête** et qui envoie la **réponse** ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ HTTP signifie HyperText Transfer Protocol. Le navigateur envoie la requête, et le serveur envoie la réponse.
 
 2. Combien de requêtes votre page `/presentation` a-t-elle déclenchées ? Lesquelles ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Pour /presentation, il y a en général 3 à 4 requêtes : presentation (le HTML), style.css, l’image (le logo Python ou la BMW) et favicon.ico. Vérifie dans ton onglet Réseau (F12, puis F5) et note le nombre réel que tu vois.
 
 3. Que signifie le code `200` ? Et le code `404` de la favicon ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le code 200 veut dire « OK, tout va bien ». Le code 404 de la favicon veut dire « introuvable » : ton site n’a pas de petite icône, donc le serveur n’a rien à envoyer.
 
 4. Pourquoi les modifications faites dans l'onglet Éléments ne sont-elles pas visibles par les autres visiteurs ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Les modifications de l’onglet Éléments ne changent que la copie affichée dans ton navigateur. Le serveur n’est pas touché, donc les autres visiteurs reçoivent toujours la page d’origine. Un rechargement les efface aussi chez toi.
 
 ---
 
