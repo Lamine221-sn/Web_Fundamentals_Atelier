@@ -142,35 +142,38 @@
 
 1. Quelle est la différence entre une erreur `4xx` et une erreur `5xx` ? Qui est « fautif » dans chaque cas ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Une erreur 4xx vient du client : mauvaise demande, page inexistante ou accès interdit (404, 403). Une erreur 5xx vient du serveur : bug ou panne (500). Dans le premier cas, le fautif est celui qui demande. Dans le second, c’est le site.
 
 2. Comment fonctionne une redirection ? Qui fait la deuxième requête : le serveur ou le navigateur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le serveur répond par un code 3xx avec un en-tête Location qui donne la nouvelle adresse. C’est ensuite le navigateur qui fait la deuxième requête vers cette adresse, automatiquement
 
 3. Donnez un exemple de situation où un vrai site utilise une redirection.
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Exemples : http:// qui redirige vers https://, google.fr qui renvoie vers google.com, ou une page de connexion qui te renvoie vers ton compte une fois identifié.
 
+Observations : sur /home, il y a 2 requêtes : d’abord 302 (avec Location: /), puis 200 sur /. Sur /nimportequoi, le navigateur voit bien un 404. Sans le , 404, le code devient 200, donc Google croirait que la page existe et l’indexerait.
+
+Défi : le code 418 veut dire « I’m a teapot » (je suis une théière). C’est une blague du 1ᵉʳ avril, sans usage réel.
 ---
 
 ## 🔴 Exercice 10 — Ce que le serveur sait de vous
 
 1. Citez trois informations que le serveur connaît sur vous, sans que vous ayez rien rempli.
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Sans rien remplir, le serveur connaît ton adresse IP, ton navigateur et ton système (User-Agent), et tes langues préférées.
 
 2. À quoi peut servir l'en-tête `Accept-Language` pour un site comme Wikipédia ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Accept-Language permet à Wikipédia d’envoyer la page dans ta langue (français, anglais…) sans que tu la choisisses.
 
 3. Dans l'Access log, retrouvez une requête qui a reçu un code `404`. Quelle page était demandée ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Dans l’Access log de PythonAnywhere, cherche une ligne avec 404 : la page demandée est celle du chemin à côté du code. Par exemple /favicon.ico ou /nimportequoi.
 
 4. Après cet exercice, que pensez-vous de la notion de « navigation anonyme » ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ La « navigation anonyme » n’est pas anonyme pour le serveur : il voit toujours ton IP et tes en-têtes. Elle ne fait que ne pas enregistrer l’historique et les cookies sur ton appareil.
 
 ---
 
