@@ -20,7 +20,6 @@ app = Flask(__name__)
 def accueil():
     return "Bienvenue sur le site de Lamine 🚀"
 
-
 # ---------------------------------------------------------------
 #  Ajoutez vos nouvelles routes ci-dessous 👇
 # ---------------------------------------------------------------
@@ -28,6 +27,10 @@ def accueil():
 def presentation():
     return "Je m'appelle Lamine et je suis étudiant en informatique."
 
+@app.get("/loisirs")
+def loisir():
+    return "J'aime le Football."
+    return "J'aime l'embrayage des boites mecaniques, faire du drift et les M4 G82"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
