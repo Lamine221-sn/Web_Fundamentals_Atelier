@@ -34,8 +34,9 @@ def presentation():
         <li>La musique</li>
         <li>Le code (bientôt !)</li>
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="100">
-        
+    
         <li>Les BMW</li>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2014%20BMW%20M4.jpg?width=400" alt="BMW M4" width="400">
     </ul>
     """
 
